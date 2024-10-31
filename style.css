@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+
+body {
+    background-color: rgb(160, 134, 134);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+  }
+
+  mark {
+    background-color: blueviolet;
+  }
+  
+  h2 {
+    background-color: rgba(0, 0, 0, 0.171);
+  }
