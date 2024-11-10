@@ -1,26 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Meu site</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: crimson;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 50px;
+            margin: 10px;
+        }
+        nav {
+            background-color: lightgreen;
+            padding: 3px;
+            box-shadow: 2px 2px 3px rgba(122, 122, 122, 0.5);
+            text-align: center;
+            border-radius: 10px 0px 10px 0px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+            text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
 
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        header, main, footer {
+            border-radius: 10px;
+        }
+        footer {
+            background-color: white;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 1px;
+            margin: 10px;
+        }
+        article {
+            background-color: lightblue;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: lightcyan;
+            box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.493);
+        }
+        button {
+            background-color: darkcyan;
+            color: white;
+        }
+        nav.voltar {
+            text-align: right;
+            margin: 10px;
+        }
+        div#bola {
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50px;
+        }
+        div#bola:active {
+            background-color: aquamarine;
+        }
+    </style> 
+</head>
 <body>
+    <header id="inicio">
+        <h1>Meu site</h1>
+        <nav>
+            <a href="https://instagram.com/lildreyki">instagram</a>
+            <a href="https://x.com/lildreyki">twitter</a>
+            <a href="https://tiktok.com/@lildreyki">tiktok</a>
+            <a href="#rodape">rodapé</a>
+        </nav>
+    </header>
     <main>
-        <h1>Site para teste <q>CSS</q></h1>
-        <h2 class="one">Matéria 01</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in temporibus amet, ipsam quasi recusandae at dolorem deleniti doloribus non deserunt quam eveniet cum eius, voluptates, animi nobis itaque inventore!</p>
-        <h2 class="two">Matéria 02</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur velit saepe optio. Minus est alias sit officiis, quibusdam tempora rem nesciunt necessitatibus, reprehenderit, fugiat nemo dolore esse expedita numquam?</p>
-        <hr>
-        <h1 id="secundario">Site para teste <q>CSS</q></h1>
-        <h2 class="one">Matéria 01</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo in temporibus amet, ipsam quasi recusandae at dolorem deleniti doloribus non deserunt quam eveniet cum eius, voluptates, animi nobis itaque inventore!</p>
-        <h2 class="two">Matéria 02</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur velit saepe optio. Minus est alias sit officiis, quibusdam tempora rem nesciunt necessitatibus, reprehenderit, fugiat nemo dolore esse expedita numquam?</p>
+        <section id="assuntos">
+            <p>Esportes, políticas e tecnologias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o tempo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum qui odio deleniti debitis fugit, rem obcaecati. Aperiam illo error nam odit sit esse explicabo dolor ducimus quisquam veritatis! Fugit, dolorem?</p>
+                <aside>
+                    <p>Artigo escrito por Andrey</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
     </main>
+    <footer id="rodape">
+        <p>Desenvolvido por Andrey</p>
+        <nav class="voltar">
+            <a href="#inicio"><button>início</button></a>
+        </nav>
+    </footer>
+    <div id="bola"></div>
 </body>
 </html>
