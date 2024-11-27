@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative; /**/
+        }
+
+        caption {
+            padding: 10px;
+            background-color: antiquewhite;
+            font-style: italic;
+        }
+
+        thead, tfoot {
+            background-color: brown;
+            color: white;
+        }
+
+        thead th {
+            position: sticky;
+            top: 0;
+            background-color: brown;
+        }
+
+        tbody tr {
+            background-color: aquamarine; 
+        }
+
+        tbody tr:nth-child(2n) { /* odd (ímpar), even (par) */
+            background-color: rgb(0, 184, 184);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .nomes {
+            text-align: center;
+        }
+
+        .number {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas Grandes</h1>
+    <!--
+    ANATOMIA DE TABELAS GRANDES
+
+    TABLE
+        CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH  
+            TFOOT
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>Populaçao dos Estados Brasileiros</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th> <!-- dados na mesma coluna -->
+                <th scope="col" style="width: 75px;">Populaçao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="nomes">São Paulo</td>
+                <td class="number">1000.000</td>
+            </tr>
+            <tr>
+                <td class="nomes">Minas Gerais</td>
+                <td class="number">200.000</td>
+            </tr>
+            <tr>
+                <td class="nomes">Rio de Janeiro</td>
+                <td class="number">300.000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!-- dados na mesma linha -->
+                <td class="number"><strong>1.500.000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum provident tenetur vel ipsam magni modi deleniti minima temporibus molestias tempore sed maiores atque voluptatum, aspernatur soluta similique cupiditate recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium quisquam quas nam nemo nihil beatae eum qui illo sed sequi rem quod iusto, iure corporis repellat non magnam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa natus officiis expedita explicabo error enim inventore repellat cum accusantium, ullam, magnam dolore neque fugit architecto, totam doloremque aspernatur impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus nihil tempore quia quis optio facilis nam corporis totam unde, recusandae debitis atque consectetur fugit, in rem deserunt veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id beatae, maxime fugit deleniti quis error molestias, qui reiciendis perspiciatis accusamus, sed dolorem laborum sint a! Facilis fugit recusandae ipsum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum provident tenetur vel ipsam magni modi deleniti minima temporibus molestias tempore sed maiores atque voluptatum, aspernatur soluta similique cupiditate recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium quisquam quas nam nemo nihil beatae eum qui illo sed sequi rem quod iusto, iure corporis repellat non magnam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa natus officiis expedita explicabo error enim inventore repellat cum accusantium, ullam, magnam dolore neque fugit architecto, totam doloremque aspernatur impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus nihil tempore quia quis optio facilis nam corporis totam unde, recusandae debitis atque consectetur fugit, in rem deserunt veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id beatae, maxime fugit deleniti quis error molestias, qui reiciendis perspiciatis accusamus, sed dolorem laborum sint a! Facilis fugit recusandae ipsum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum provident tenetur vel ipsam magni modi deleniti minima temporibus molestias tempore sed maiores atque voluptatum, aspernatur soluta similique cupiditate recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium quisquam quas nam nemo nihil beatae eum qui illo sed sequi rem quod iusto, iure corporis repellat non magnam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa natus officiis expedita explicabo error enim inventore repellat cum accusantium, ullam, magnam dolore neque fugit architecto, totam doloremque aspernatur impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus nihil tempore quia quis optio facilis nam corporis totam unde, recusandae debitis atque consectetur fugit, in rem deserunt veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id beatae, maxime fugit deleniti quis error molestias, qui reiciendis perspiciatis accusamus, sed dolorem laborum sint a! Facilis fugit recusandae ipsum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum provident tenetur vel ipsam magni modi deleniti minima temporibus molestias tempore sed maiores atque voluptatum, aspernatur soluta similique cupiditate recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium quisquam quas nam nemo nihil beatae eum qui illo sed sequi rem quod iusto, iure corporis repellat non magnam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa natus officiis expedita explicabo error enim inventore repellat cum accusantium, ullam, magnam dolore neque fugit architecto, totam doloremque aspernatur impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus nihil tempore quia quis optio facilis nam corporis totam unde, recusandae debitis atque consectetur fugit, in rem deserunt veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id beatae, maxime fugit deleniti quis error molestias, qui reiciendis perspiciatis accusamus, sed dolorem laborum sint a! Facilis fugit recusandae ipsum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum provident tenetur vel ipsam magni modi deleniti minima temporibus molestias tempore sed maiores atque voluptatum, aspernatur soluta similique cupiditate recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium quisquam quas nam nemo nihil beatae eum qui illo sed sequi rem quod iusto, iure corporis repellat non magnam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa natus officiis expedita explicabo error enim inventore repellat cum accusantium, ullam, magnam dolore neque fugit architecto, totam doloremque aspernatur impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus nihil tempore quia quis optio facilis nam corporis totam unde, recusandae debitis atque consectetur fugit, in rem deserunt veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id beatae, maxime fugit deleniti quis error molestias, qui reiciendis perspiciatis accusamus, sed dolorem laborum sint a! Facilis fugit recusandae ipsum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum provident tenetur vel ipsam magni modi deleniti minima temporibus molestias tempore sed maiores atque voluptatum, aspernatur soluta similique cupiditate recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium quisquam quas nam nemo nihil beatae eum qui illo sed sequi rem quod iusto, iure corporis repellat non magnam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa natus officiis expedita explicabo error enim inventore repellat cum accusantium, ullam, magnam dolore neque fugit architecto, totam doloremque aspernatur impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus nihil tempore quia quis optio facilis nam corporis totam unde, recusandae debitis atque consectetur fugit, in rem deserunt veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id beatae, maxime fugit deleniti quis error molestias, qui reiciendis perspiciatis accusamus, sed dolorem laborum sint a! Facilis fugit recusandae ipsum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum provident tenetur vel ipsam magni modi deleniti minima temporibus molestias tempore sed maiores atque voluptatum, aspernatur soluta similique cupiditate recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium quisquam quas nam nemo nihil beatae eum qui illo sed sequi rem quod iusto, iure corporis repellat non magnam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa natus officiis expedita explicabo error enim inventore repellat cum accusantium, ullam, magnam dolore neque fugit architecto, totam doloremque aspernatur impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus nihil tempore quia quis optio facilis nam corporis totam unde, recusandae debitis atque consectetur fugit, in rem deserunt veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id beatae, maxime fugit deleniti quis error molestias, qui reiciendis perspiciatis accusamus, sed dolorem laborum sint a! Facilis fugit recusandae ipsum?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum provident tenetur vel ipsam magni modi deleniti minima temporibus molestias tempore sed maiores atque voluptatum, aspernatur soluta similique cupiditate recusandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur accusantium quisquam quas nam nemo nihil beatae eum qui illo sed sequi rem quod iusto, iure corporis repellat non magnam harum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa natus officiis expedita explicabo error enim inventore repellat cum accusantium, ullam, magnam dolore neque fugit architecto, totam doloremque aspernatur impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut at possimus nihil tempore quia quis optio facilis nam corporis totam unde, recusandae debitis atque consectetur fugit, in rem deserunt veniam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis id beatae, maxime fugit deleniti quis error molestias, qui reiciendis perspiciatis accusamus, sed dolorem laborum sint a! Facilis fugit recusandae ipsum?</p>
+    
+</body>
+</html>
