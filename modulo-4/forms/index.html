@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" autocomplete="on" method="get"> <!--method => oculta na url-->
+        <fieldset>
+            <legend> Dados pessoais </legend>
+            <p>
+                <label for="user">Usuário:</label>
+                <input type="text" name="user" id="user" placeholder="digite seu usuário..." required minlength="5" maxlength="20" size="20" autocomplete="username">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="digite seu email..." required size="20" autocomplete="email" >
+            </p>
+            <p>
+                <label for="phone">Telefone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="digite seu telefone..." autocomplete="tel">
+            </p>
+            <p>
+                <label for="pass">Senha:</label>
+                <input type="password" name="pass" id="pass" placeholder="digite sua senha..." required minlength="8" size="20" autocomplete="current-password">
+            </p>
+            <p>
+                <label for="num">Número:</label>
+                <input type="number" name="num" id="num" placeholder="0 a 10" min="0" max="10" step="0.1" size="5" value="5">
+            </p>
+            <p>
+                <label for="date">Nascimento:</label>
+                <input type="date" name="date" id="date" value="2024-11-26" max="2006-12-31">
+            </p>
+            <p>
+                <label for="time">Hora:</label>
+                <input type="time" name="time" id="time">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <form action="cadastro.php">
+        <fieldset>
+            <legend> Perguntas básicas </legend>
+            <h4>Quais seus esportes favoritos?</h4>
+
+                <input type="checkbox" name="futebol" id="futebol">
+                <label for="futebol">Futebol</label><br>
+
+                <input type="checkbox" name="basquete" id="basquete">
+                <label for="basquete">Basquete</label><br>
+
+                <input type="checkbox" name="volei" id="volei">
+                <label for="volei">Vôlei</label><br>
+
+        </fieldset>
+        <fieldset>
+            <legend> Sexo </legend>
+            <input type="radio" name="sex" id="xy" checked>
+            <label for="xy">Másculino</label><br>
+            <input type="radio" name="sex" id="xx">
+            <label for="xx">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Outros</legend>
+            <p>Qual sua cor favorita?</p>
+            <input type="color" name="color" id="color">
+            
+            <p>Qual seu nível de atisfação com o suporte do site?</p>
+            <input type="range" name="level" id="level" min="1" max="5" value="3">
+
+            <p>Envie um arquivo de imagem</p>
+            <input type="file" name="file" id="file"> <!-- para este input, deve-se utilizar o 'post' como method. -->
+        </fieldset>
+        <fieldset>
+            <legend>Informações casuais</legend>
+            <p>
+                <label for="">Estado:</label>
+                <select name="estado" id="estado">
+                    <option value="" selected> --- Escolha --- </option>
+                    <optgroup label="Primeira classe">
+                        <option value="">Bahia</option>
+                        <option value="">São Paulo</option>
+                        <option value="">Rio de Janeiro</option>
+                    </optgroup>
+
+                    <optgroup label="Segunda classe">
+                        <option value="">Espirito Santo</option>
+                        <option value="">Acre</option>
+                        <option value="">Tocantins</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="proff">Profissão:</label>
+                <input type="text" name="proff" id="proff" list="lista">
+                <datalist id="lista">
+                    <option value="Adm"></option>
+                    <option value="Pgm"></option>
+                    <option value="Eng"></option>
+                    <option value="Med"></option>
+                </datalist>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Mande sua mensagem</legend>
+            <p>
+                <label for="msg">Mensagem:</label><br>
+                <textarea name="msg" id="msg" placeholder="digite sua mensagem..." cols="30" rows="10">Amei o site, parabéns!</textarea>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
