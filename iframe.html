@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        iframe {
+            border: 1px dashed black;
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+            width: 600px;
+            height: 400px;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+<body>
+    <h1>navegando entre iframes</h1>
+    <ul>
+        <li><a href="pages/page1.html" target="frame">page 1</a></li>
+        <li><a href="pages/page2.html" target="frame">page 2</a></li>
+        <li><a href="pages/page3.html" target="frame">page 3</a></li>
+    </ul>
+    <iframe src="pages/page1.html" frameborder="0" name="frame" sandbox="sandobox" referrerpolicy="no-referrer"></iframe>
+
+    <h2>Mapa de Conceição do Jacuípe</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d249417.16109313117!2d-39.4502237!3d-12.3733425!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7142ef1e7beca53%3A0x6adbfe587bcdd1cf!2zQ29uY2Vpw6fDo28gZG8gSmFjdcOtcGUsIEJBLCA0NDIzMC0wMDA!5e0!3m2!1spt-BR!2sbr!4v1732221500734!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer style="padding: 50px;">
+
+    </footer>
+</body>
+</html>
