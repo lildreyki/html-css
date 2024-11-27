@@ -1,0 +1,15 @@
+[1121/161535.594:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1121/161537.324:ERROR:crashpad_client_win.cc(868)] not connected
+[1121/161926.831:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1121/164312.213:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1121/164314.053:ERROR:crashpad_client_win.cc(868)] not connected
+[1121/164315.409:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1121/164316.624:ERROR:crashpad_client_win.cc(868)] not connected
+[1121/164317.548:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1121/164318.405:ERROR:crashpad_client_win.cc(868)] not connected
+[1121/164319.132:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1121/164319.940:ERROR:crashpad_client_win.cc(868)] not connected
+[1121/164320.721:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1121/164321.509:ERROR:crashpad_client_win.cc(868)] not connected
+[1121/170312.786:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
+[1121/173819.165:ERROR:registration_protocol_win.cc(108)] CreateFile: O sistema não pode encontrar o arquivo especificado. (0x2)
