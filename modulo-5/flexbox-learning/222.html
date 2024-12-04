@@ -14,8 +14,8 @@
             flex-wrap: nowrap; /* quebra */
             /*flex-flow: row wrap;*/
             
-            /*justify-content: flex-start;  ->  main-axis (principal)*/
-            /* align-content: center;  ->  cross-axis == wrap (transversal)*/
+            /*justify-content: flex-start;  ->  main-axis */
+            /* align-content: center;  ->  cross-axis == wrap */
             align-items: center; /* cross-axis */
         }
 
@@ -26,45 +26,33 @@
             padding: 10px;
 
             flex: auto;
-            flex-basis: 200px; /* largura */
+            /* flex-basis: 200px;  ->  largura */
             /* flex-shrink: 0;  ->  não encolhe */
             flex-shrink: 1; /* encolhe */
             flex-grow: 0; /* não aumenta tamanho */
             /* flex-grow: 1;  ->  aumenta tamanho */
+            /* flex: 0 1 200px;  ->  simplificado  ==  flex: flex-grow + flex-shrink + flex-basis */
         }
 
         #i1 {
-            order: -5; /* ordenar item ao container */
-            align-self: flex-end; /* alinhar item ao container*/
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            /* flex: 0 1 auto;  ==  flex: initial; */ 
         }
 
         #i2 {
-            order: 3;
-            align-self: center;
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: auto;
+            /* flex: 0 0 auto;  ==  flex: none; */ 
         }
 
         #i3 {
-            order: 0;
-            align-self: flex-end;
-        }
-
-        #i4 {
-            order: 1;
-            align-self: stretch;
-        }
-
-        #i5 {
-            order: 8;
-            align-self: auto;
-        }
-
-        #i6
-         {
-            order: 1;
-        }
-
-        #i7 {
-            order: -1;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            /* flex: 1 1 auto;  ==  flex: auto; */ 
         }
     </style>
 </head>
@@ -73,10 +61,6 @@
         <div class="item" id="i1">Exemplo de bloco: A</div>
         <div class="item" id="i2">Exemplo de bloco: B</div>
         <div class="item" id="i3">Exemplo de bloco: C</div>
-        <div class="item" id="i4">Exemplo de bloco: D</div>
-        <div class="item" id="i5">Exemplo de bloco: E</div>
-        <div class="item" id="i6">Exemplo de bloco: F</div>
-        <div class="item" id="i7">Exemplo de bloco: G</div>
     </div>
 </body>
 </html>
